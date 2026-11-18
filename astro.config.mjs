@@ -27,7 +27,7 @@ import { pluginCustomCopyButton } from "./src/plugins/expressive-code/custom-cop
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://spikewu.github.io/",
+	site: "https://wu5810222-alt.github.io/",
 	base: "/",
 	trailingSlash: "always",
 	integrations: [
