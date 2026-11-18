@@ -117,5 +117,37 @@
         overflow-x: auto;
         margin: 1em 0;
     }
+
+    mark {
+        @apply bg-[var(--selection-bg)] text-inherit px-1 py-0.5 rounded;
+
+        &[data-hl="red"] {
+            @apply bg-red-500/20 dark:bg-red-500/30;
+        }
+        &[data-hl="orange"] {
+            @apply bg-orange-500/20 dark:bg-orange-500/30;
+        }
+        &[data-hl="yellow"] {
+            @apply bg-yellow-400/35 dark:bg-yellow-400/25;
+        }
+        &[data-hl="green"] {
+            @apply bg-emerald-500/20 dark:bg-emerald-500/30;
+        }
+        &[data-hl="blue"] {
+            @apply bg-blue-500/20 dark:bg-blue-500/30;
+        }
+        &[data-hl="purple"] {
+            @apply bg-purple-500/20 dark:bg-purple-500/30;
+        }
+        &[data-hl="brown"] {
+            @apply bg-amber-700/20 dark:bg-amber-600/30;
+        }
+        &[data-hl="gray"] {
+            @apply bg-neutral-500/20 dark:bg-neutral-400/25;
+        }
+        &[data-hl="white"] {
+            @apply bg-neutral-200/70 dark:bg-white/20;
+        }
+    }
     
 }
