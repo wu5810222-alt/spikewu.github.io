@@ -36,12 +36,10 @@ export function remarkHighlight() {
 				return;
 			}
 
-			HIGHLIGHT_RE.lastIndex = 0;
 			const parts = [];
 			let lastIndex = 0;
-			let match;
 
-			while ((match = HIGHLIGHT_RE.exec(node.value)) !== null) {
+			for (const match of node.value.matchAll(HIGHLIGHT_RE)) {
 				if (match.index > lastIndex) {
 					parts.push({
 						type: "text",
